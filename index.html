@@ -1,21 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Digital</title>
+    <title>Undangan Pernikahan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Amiri&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Undangan Pernikahan</h1>
-    </header>
-    <section>
-        <p>Anda diundang ke acara pernikahan...</p>
-    </section>
-    <footer>
-        <p>Detail acara...</p>
-    </footer>
+<body class="bg-light">
+    <div class="container bg-white p-4 shadow rounded">
+        <header class="text-center my-5 fade-in">
+            <h1 class="display-4" style="font-family: 'Great Vibes', cursive;">Hendri Putra Ariga & Desfirani Khumaira</h1>
+            <p style="font-family: 'Amiri', serif;">Putra dari Bapak M Yusuf dan Ibu Darlina</p>
+            <p style="font-family: 'Amiri', serif;">Putri dari Bapak Parwira Abd Rauf dan Ibu Sukriani</p>
+        </header>
+        <section id="ayat" class="text-center my-5 fade-in">
+            <h2 class="display-5" style="font-family: 'Amiri', serif;">Ayat Al-Qur'an</h2>
+            <p class="lead" style="font-family: 'Amiri', serif;">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir." (QS. Ar-Rum: 21)</p>
+        </section>
+        <section id="save-the-date" class="text-center my-5 fade-in">
+            <h2 class="display-5" style="font-family: 'Amiri', serif;">Save the Date</h2>
+            <p class="lead" style="font-family: 'Amiri', serif;">Tanggal: 1 Februari 2025</p>
+        </section>
+        <section id="foto-mempelai" class="text-center my-5 fade-in">
+            <h2 class="display-5" style="font-family: 'Amiri', serif;">Foto Mempelai</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/hendri.jpg" class="img-fluid rounded-circle" alt="Hendri" style="width: 150px;">
+                    <p class="mt-2" style="font-family: 'Amiri', serif;">Hendri Putra Ariga</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/uma.jpg" class="img-fluid rounded-circle" alt="Desfirani" style="width: 150px;">
+                    <p class="mt-2" style="font-family: 'Amiri', serif;">Desfirani Khumaira</p>
+                </div>
+            </div>
+        </section>
+        <section id="kata-kata" class="text-center my-5 fade-in">
+            <h2 class="display-5" style="font-family: 'Amiri', serif;">Kata-kata Indah</h2>
+            <p class="lead" style="font-family: 'Amiri', serif;">Kami mengundang Anda untuk merayakan hari bahagia kami bersama...</p>
+        </section>
+        <section id="wedding-gallery" class="text-center my-5 fade-in">
+            <h2 class="display-5" style="font-family: 'Amiri', serif;">Wedding Gallery</h2>
+            <!-- Tambahkan galeri foto -->
+        </section>
+        <section id="musik" class="text-center my-5 fade-in">
+            <h2 class="display-5" style="font-family: 'Amiri', serif;">Musik Pernikahan</h2>
+            <audio id="wedding-music" autoplay loop hidden>
+                <source src="music/wedding-music.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung pemutar musik.
+            </audio>
+        </section>
+        <footer class="text-center my-5 fade-in">
+            <p class="lead" style="font-family: 'Amiri', serif;">Detail lainnya...</p>
+        </footer>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
